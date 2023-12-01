@@ -14,7 +14,7 @@ import os
 if bool(os.environ.get("WEBHOOK", False)):
     from sample_config import Config
 else:
-  print "r"
+  print("r")
    # from sample_config import Configg
 
 import pyrogram
