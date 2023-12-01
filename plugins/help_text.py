@@ -37,7 +37,7 @@ async def help_user(bot, update):
         text=Translation.HELP_USER,
         parse_mode="html",
         disable_web_page_preview=True,
-        reply_to_message_id=update.message_id
+        reply_to_message_id=update.id
     )
 
 
@@ -72,6 +72,6 @@ async def upgrade(bot, update):
         chat_id=update.chat.id,
         text=Translation.UPGRADE_TEXT,
         parse_mode="html",
-        reply_to_message_id=update.message_id,
+        reply_to_message_id=update.id,
         disable_web_page_preview=True
     )
