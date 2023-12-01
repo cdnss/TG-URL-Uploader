@@ -61,7 +61,7 @@ async def start(bot, update):
     await bot.send_message(
         chat_id=update.chat.id,
         text=Translation.START_TEXT,
-        reply_to_message_id=update.message_id
+        reply_to_message_id=update.id
     )
 
 
